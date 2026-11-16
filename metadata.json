@@ -1,0 +1,6 @@
+{
+  "name": "Image to Voice Agent",
+  "description": "Upload any image with printed or handwritten text in English, Urdu, Hindi, or Sindhi, edit or tidy the extracted text, and generate a natural AI voice-over to play and download.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

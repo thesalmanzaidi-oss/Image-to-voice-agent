@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+    --font-sans: "DM Sans", "Noto Sans Devanagari", system-ui, -apple-system, sans-serif;
+    --font-rtl: "DM Sans", "Noto Nastaliq Urdu", Tahoma, Arial, sans-serif;
+    --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+  }
+
+  h1,
+  h2,
+  h3,
+  .font-display {
+    font-family: var(--font-display);
+  }
+
+  .font-mono {
+    font-family: var(--font-mono);
+  }
+
+  .font-rtl {
+    font-family: var(--font-rtl);
+    line-height: 2.1;
+  }
+}
+
+.studio-backdrop {
+  background-color: #f3f6fb;
+  background-image:
+    radial-gradient(62% 48% at 12% 8%, rgba(37, 99, 235, 0.14) 0%, rgba(37, 99, 235, 0) 70%),
+    radial-gradient(52% 44% at 88% 14%, rgba(14, 165, 233, 0.13) 0%, rgba(14, 165, 233, 0) 68%),
+    radial-gradient(58% 50% at 50% 92%, rgba(56, 189, 248, 0.11) 0%, rgba(56, 189, 248, 0) 72%),
+    linear-gradient(180deg, #f7faff 0%, #eef3fa 55%, #f5f8fd 100%);
+}
+
+.studio-grid-pattern {
+  background-image: radial-gradient(rgba(15, 23, 42, 0.075) 1px, transparent 1px);
+  background-size: 24px 24px;
+  mask-image: radial-gradient(ellipse 85% 75% at 50% 28%, #000 45%, transparent 100%);
+  -webkit-mask-image: radial-gradient(ellipse 85% 75% at 50% 28%, #000 45%, transparent 100%);
+}
+
